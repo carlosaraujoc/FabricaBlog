@@ -54,7 +54,7 @@ ROOT_URLCONF = 'projetosite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [r'C:\Users\joyce\OneDrive\Área de Trabalho\Code\Python\Unipê\blog\templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
