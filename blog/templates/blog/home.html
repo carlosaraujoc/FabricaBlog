@@ -5,12 +5,16 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Listagem</h1>
+    <h1>Lista de Monstros</h1>
     <ul>
         {% for Monstros in Monstros %}
-            <li>{{Monstros.nome}} é {{Monstros.tendencia}}</li>
+            <li><h3><a href="{% url 'update_monster' Monstros.id %}">{{Monstros.nome}}</a></h3>
+                <p>Tendência: {{Monstros.tendencia}}.</p>
+                <p>Nível de dificuldade:{{Monstros.dificuldade}}</p>
+            </li>
         {% endfor %}
     </ul>
+    <a href="{% url 'new_monster' %}">Novo Monstro</a>
 
     
 </body>

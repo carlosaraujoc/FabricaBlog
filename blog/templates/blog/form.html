@@ -10,6 +10,9 @@
 
         {{create.as_p}}
         <button type="submit">Salvar</button>
+        {%if monstro %}
+            <a href="{% url 'delete_monster' monstro.id %}">Deletar</a>
+        {%endif%}
     </form>
 </body>
 </html>
